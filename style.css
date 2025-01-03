@@ -1,0 +1,58 @@
+.test{
+	border-radius: 15px;
+	width: 2in;
+	height: 2in;
+	animation: mark 3s ease ;/hover/
+	animation-direction: both;
+	transition:transform 3s ease ;/ smooth transition/
+}
+
+.opt{
+	transition:transform 1s ease ;
+}
+.opt:hover{ opacity: 50%;
+	background-color: skyblue;
+	transform:  rotate(720deg);
+
+
+
+}
+ @keyframes mark{
+ 	0%{transform: rotate(0deg) scale(0) ; opacity:0% ; border-radius:100% }
+ 	80%{border-radius: 30%;}
+ 	100%{transform:rotate(360deg) scale(1);opacity:100%;border-radius: 15px}
+ 	
+ }
+ body{background-color:darkblue; }
+ .max:hover{
+ 	scale: 1.1;
+ 	rotate: -5deg;
+ }
+ .max{
+ 	transition: .5s ease;
+ 	border-radius: 20px;
+ }
+ .max1{
+ 	transition: .5s ease;
+ 	border-radius: 20px;
+ }
+ .max1:hover{
+ 	scale: 1.1;
+ 	rotate: 5deg;}
+ .arr{
+ 	animation: rot 3s ease infinite;
+
+ }
+ @keyframes rot{
+ 	0%{}
+ 	100%{transform: rotateY(360deg);}
+ }
+ .services{
+ 	animation: serv 3s ease alternate both infinite;
+ }
+ @keyframes serv{
+ 	0%{}
+ 	50%{ color:orange; }
+ 	100%{color: yellow;}
+
+ }
